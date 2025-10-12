@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>🌻</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      height: 100vh;
+      background: linear-gradient(135deg, #000000, #ebee2f);
+      font-family: cursive;
+      margin: 0;
+      overflow: hidden;
+    }
+    .gift-box {
+      width: 150px;
+      height: 150px;
+      background: #f10101;
+      border-radius: 10px;
+      position: relative;
+      cursor: pointer;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+      transition: transform 0.3s;
+    }
+    .gift-box:hover {
+      transform: scale(1.1);
+    }
+    .gift-box::before {
+      content: "";
+      position: absolute;
+      width: 30px;
+      height: 150px;
+      background: #fff;
+      left: 50%;
+      top: 0;
+      transform: translateX(-50%);
+    }
+    .gift-box::after {
+      content: "";
+      position: absolute;
+      width: 150px;
+      height: 30px;
+      background: #fff;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
+    /* Neon note */
+    .note {
+      margin-top: 20px;
+      font-size: 24px;
+      font-weight: bold;
+      color: #fff;
+      text-align: center;
+      text-shadow: 
+       0 0 5px #ff00de,
+          0 0 10px #ff00de,
+          0 0 20px #ff00de,
+          0 0 40px #ff0080,
+          0 0 80px #ff0080;
+        
+     
+      animation: neonFlicker 2s infinite alternate;
+    }
+
+    @keyframes neonFlicker {
+      0% {
+        text-shadow:
+          0 0 5px #ff00de,
+          0 0 10px #ff00de,
+          0 0 20px #ff00de,
+          0 0 40px #ff0080,
+          0 0 80px #ff0080;
+        opacity: 1;
+      }
+      50% {
+        text-shadow:
+          0 0 2px #ff00de,
+          0 0 5px #ff00de,
+          0 0 10px #ff0080;
+        opacity: 0.8;
+      }
+      100% {
+        text-shadow:
+          0 0 10px #ff00de,
+          0 0 20px #ff00de,
+          0 0 40px #ff0080,
+          0 0 80px #ff0080,
+          0 0 100px #ff0040;
+        opacity: 1;
+      }
+    }
+
+    /* Explosion effect */
+    .explode {
+      animation: boom 0.8s forwards;
+    }
+    @keyframes boom {
+      0% { transform: scale(1); opacity: 1; }
+      50% { transform: scale(1.5); opacity: 0.7; }
+      100% { transform: scale(3); opacity: 0; }
+    }
+
+    /* Confetti */
+    .confetti {
+      position: absolute;
+      width: 8px;
+      height: 14px;
+      background: red;
+      top: 50%;
+      left: 50%;
+      opacity: 0.8;
+      animation: fall 1s forwards;
+    }
+    @keyframes fall {
+      0% { transform: translate(0,0) rotate(0deg); }
+      100% { transform: translate(var(--x), var(--y)) rotate(720deg); opacity: 0; }
+    }
+  </style>
+</head>
+<body>
+  <div class="gift-box" id="gift"></div>
+  <div class="note">CLICK ME TO SEE A MAGIC </div>
+
+  <script>
+    const gift = document.getElementById("gift");
+
+    gift.addEventListener("click", () => {
+      // Explosion effect
+      gift.classList.add("explode");
+
+      // Confetti burst
+      for (let i = 0; i < 30; i++) {
+        const confetti = document.createElement("div");
+        confetti.classList.add("confetti");
+        confetti.style.backgroundColor = `hsl(${Math.random()*360}, 100%, 50%)`;
+        confetti.style.setProperty("--x", `${(Math.random() - 0.5) * 400}px`);
+        confetti.style.setProperty("--y", `${(Math.random() - 0.5) * 400}px`);
+        document.body.appendChild(confetti);
+        setTimeout(() => confetti.remove(), 1000);
+      }
+
+      // Redirect after animation
+      setTimeout(() => {
+        window.location.href = "start.html";
+      }, 1000);
+    });
+  </script>
+</body>
+</html>
