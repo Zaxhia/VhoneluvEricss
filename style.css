@@ -18,7 +18,7 @@ body {
       top: 95%;
       left: 50%;
       transform: translate(-50%, -50%);
-      font-size: 20px;
+      font-size: 20%;
       color: rgba(49, 39, 39, 0.182);
       font-weight: bold;
       pointer-events: none;
