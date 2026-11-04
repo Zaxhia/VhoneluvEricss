@@ -1,10 +1,5 @@
 # 🌻 Happy Birthday Erica Eco!
 
-[![Live Demo](https://img.shields.io/badge/Live_Demo-ff758c?style=for-the-badge&logo=githubpages&logoColor=white)](https://your-username.github.io/your-repo-name)
-[![Made with Love](https://img.shields.io/badge/Made_with-💖-ff69b4.svg)](https://github.com/your-username)
-
-**An interactive birthday surprise that blooms with every click - dedicated to Erica Eco**
-
 ---
 
 ## 🎁 What Is This?
