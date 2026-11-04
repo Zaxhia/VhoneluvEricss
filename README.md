@@ -6,7 +6,6 @@
 
 This is a **magical birthday experience** created especially for Erica Eco. It starts with a mysterious gift box that, when clicked, explodes into a beautiful field of sunflowers while a heartfelt birthday message appears.
 
-Think of it as a **digital birthday card** that comes to life - each click makes the garden grow!
 
 ---
 
@@ -33,35 +32,6 @@ Think of it as a **digital birthday card** that comes to life - each click makes
 
 ---
 
-## 🖱️ How to Use It
-
-### On Your PC or Laptop
-
-**Step 1: Open the Experience**
-- Click the **Live Demo** button at the top of this page
-- Or visit the GitHub Pages URL
-
-**Step 2: Let the Magic Load**
-- You'll see a red gift box on screen
-- A glowing neon message invites you to click
-- Background music will start playing (don't worry, you can mute it)
-
-**Step 3: Click the Gift Box**
-- Click anywhere on the red gift box
-- Watch it explode with a dramatic animation
-- Colorful confetti will burst in every direction
-
-**Step 4: Watch the Garden Grow**
-- Beautiful sunflowers will start appearing
-- Each sunflower grows from the ground up
-- Stems rise, leaves unfold, and petals bloom
-
-**Step 5: Keep Exploring**
-- Click anywhere on the screen to grow MORE flowers
-- Each click adds 4 new sunflowers
-- Create your own endless sunflower field
-
----
 
 ## 🎮 Interactive Features
 
@@ -109,48 +79,6 @@ Every sunflower has these animated parts:
 - 🍃 Left and right leaves
 - 🟤 Brown center (the seed head)
 - 💛 12 golden petals (6 back layer + 6 front layer)
-
----
-
-## 💻 Trying It on Your Computer
-
-### Method 1: Live Website (Easiest)
-Just click the **Live Demo** link - works immediately in any modern browser:
-- Chrome (best performance)
-- Firefox
-- Safari
-- Edge
-
-### Method 2: Download and Run
-
-**For Windows:**
-1. Click the green "Code" button on GitHub
-2. Select "Download ZIP"
-3. Extract the folder to your desktop
-4. Double-click `start.html` or `index.html`
-5. *Note*: Music requires proper file paths
-
-**Better Local Method:**
-1. Download and install Python from python.org
-2. Open Command Prompt in the unzipped folder
-3. Type: `python -m http.server 8000`
-4. Open browser to: `http://localhost:8000`
-5. Music will work correctly this way
-
-**For Mac:**
-1. Download the ZIP from GitHub
-2. Extract the folder
-3. Open Terminal in that folder
-4. Type: `python3 -m http.server 8000`
-5. Open Safari to: `http://localhost:8000`
-
-### Method 3: Using VS Code
-1. Install Visual Studio Code
-2. Install "Live Server" extension
-3. Open the project folder
-4. Right-click `start.html` → "Open with Live Server"
-
----
 
 ## 📱 Mobile Experience
 
